@@ -1,7 +1,7 @@
 /**
   Google Code Jam 2019
   TaskName: You can go your own way
-  Round: Qualification Roound
+  Round: Qualification Round
   Lang: C++
   Author: Ronnakorn Hompoa - Thailand
 */

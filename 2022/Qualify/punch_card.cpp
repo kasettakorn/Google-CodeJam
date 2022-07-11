@@ -1,7 +1,7 @@
 /**
   Google Code Jam 2022
   TaskName: Punch card
-  Round: Qualification Roound
+  Round: Qualification Round
   Lang: C++
   Author: Ronnakorn Hompoa - Thailand
 */

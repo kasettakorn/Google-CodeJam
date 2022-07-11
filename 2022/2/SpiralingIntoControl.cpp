@@ -1,7 +1,7 @@
 /**
   Google Code Jam 2022
-  TaskName: d1000000
-  Round: Qualification Round
+  TaskName: Spiraling Into Control
+  Round: 2
   Lang: C++
   Author: Ronnakorn Hompoa - Thailand
 */
@@ -27,19 +27,10 @@ typedef vector<pair<int,int>> vpii;
 
 void solve(int tc)
 {
-    ll N;
-    cin >> N;
-    ll S[N];
-    FOR(i,0,N) cin >> S[i];
+   
 
     cout << "Case #" << tc << ": ";
-    SORT(S, N);
-    ll c=1;
-    FOR(i,0,N) {
-        if (S[i] >= c) c++;
-    }
-    cout << c-1 << endl;
-
+ 
 
 
 
