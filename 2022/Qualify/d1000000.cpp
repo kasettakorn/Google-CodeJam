@@ -1,6 +1,6 @@
 /**
   Google Code Jam 2022
-  TaskName: Punch card
+  TaskName: d1000000
   Round: Qualification Roound
   Lang: C++
   Author: Ronnakorn Hompoa - Thailand
@@ -27,19 +27,19 @@ typedef vector<pair<int,int>> vpii;
 
 void solve(int tc)
 {
-    ll R, C;
-    cin >> R >> C;
-    cout << "Case #" << tc << ": " << endl;
-    FOR(i, 0, R*2+1) {
-        FOR(j, 0 ,C*2+1) {
-            if ((i == 0 && j == 0) || i+j == 1) cout << ".";
-            else if (i % 2 == 1 && j % 2 == 1) cout << ".";
-            else if (i % 2 == 1 && j % 2 == 0) cout << "|";
-            else if (i % 2 == 0 && j % 2 == 0) cout << "+";
-            else cout << "-";
-        }
-        cout << endl;
+    ll N;
+    cin >> N;
+    ll S[N];
+    FOR(i,0,N) cin >> S[i];
+
+    cout << "Case #" << tc << ": ";
+    SORT(S, N);
+    ll c=1;
+    FOR(i,0,N) {
+        if (S[i] >= c) c++;
     }
+    cout << c-1 << endl;
+
 
 
 
