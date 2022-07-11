@@ -19,8 +19,20 @@ typedef vector<pair<int,int>> vpii;
 
 void solve(int tc)
 {
-    cout << "Case #" << tc << ": ";
-    
+    ll R, C;
+    cin >> R >> C;
+    cout << "Case #" << tc << ": " << endl;
+    FOR(i, 0, R*2+1) {
+        FOR(j, 0 ,C*2+1) {
+            if ((i == 0 && j == 0) || i+j == 1) cout << ".";
+            else if (i % 2 == 1 && j % 2 == 1) cout << ".";
+            else if (i % 2 == 1 && j % 2 == 0) cout << "|";
+            else if (i % 2 == 0 && j % 2 == 0) cout << "+";
+            else cout << "-";
+        }
+        cout << endl;
+    }
+
 
 
 }
